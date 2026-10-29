@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gale-gusts",
+    "metric": "gustKmh",
+    "operator": ">=",
+    "threshold": 75,
+    "level": "danger",
+    "message": "Gusts strong enough to knock walkers off their feet on exposed ground"
+  },
+  {
+    "id": "strong-gusts",
+    "metric": "gustKmh",
+    "operator": ">=",
+    "threshold": 50,
+    "level": "caution",
+    "message": "Gusty enough to affect balance, especially on ridges"
+  },
+  {
+    "id": "strong-wind",
+    "metric": "windKmh",
+    "operator": ">=",
+    "threshold": 40,
+    "level": "caution",
+    "message": "Sustained strong wind makes walking tiring and raises the wind chill"
+  },
+  {
+    "id": "freezing",
+    "metric": "temperatureC",
+    "operator": "<=",
+    "threshold": 0,
+    "level": "caution",
+    "message": "Freezing temperatures, ice possible on rock and paths"
+  },
+  {
+    "id": "heavy-rain",
+    "metric": "precipitationMmPerHour",
+    "operator": ">=",
+    "threshold": 2.5,
+    "level": "caution",
+    "message": "Heavy rain, streams may rise and visibility drops"
+  }
+]
