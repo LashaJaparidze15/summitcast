@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Trimmed copy of a real Met Éireann locationforecast response, values edited for testing. -->
+<weatherdata created="2026-10-29T21:53:37Z">
+  <product class="pointData">
+    <time datatype="forecast" from="2026-10-30T09:00:00Z" to="2026-10-30T09:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <temperature id="TTT" unit="celsius" value="8.0"/>
+        <windDirection id="dd" deg="170.2" name="S"/>
+        <windSpeed id="ff" mps="10.0" beaufort="5" name="Fresh breeze"/>
+        <windGust id="ff_gust" mps="15.0"/>
+      </location>
+    </time>
+    <time datatype="forecast" from="2026-10-30T09:00:00Z" to="2026-10-30T10:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <precipitation unit="mm" value="0.4" minvalue="0.0" maxvalue="0.8" probability="40.0"/>
+      </location>
+    </time>
+    <time datatype="forecast" from="2026-10-30T10:00:00Z" to="2026-10-30T10:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <temperature id="TTT" unit="celsius" value="6.0"/>
+        <windSpeed id="ff" mps="14.0" beaufort="7" name="Near gale"/>
+        <windGust id="ff_gust" mps="21.0"/>
+      </location>
+    </time>
+    <time datatype="forecast" from="2026-10-30T10:00:00Z" to="2026-10-30T11:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <precipitation unit="mm" value="1.2"/>
+      </location>
+    </time>
+    <time datatype="forecast" from="2026-10-30T11:00:00Z" to="2026-10-30T11:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <temperature id="TTT" unit="celsius" value="5.0"/>
+        <windSpeed id="ff" mps="12.0" beaufort="6" name="Strong breeze"/>
+      </location>
+    </time>
+    <time datatype="forecast" from="2026-10-30T08:00:00Z" to="2026-10-30T14:00:00Z">
+      <location altitude="759" latitude="51.9993" longitude="-9.7425">
+        <precipitation unit="mm" value="6.0"/>
+      </location>
+    </time>
+  </product>
+</weatherdata>
