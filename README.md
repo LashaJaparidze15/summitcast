@@ -89,16 +89,21 @@ cd backend
 
 ## Sample data
 
-`samples/carrauntoohil-devils-ladder.gpx` is an illustrative out-and-back route from near Cronin's
-Yard up Hag's Glen and the Devil's Ladder to Carrauntoohil. The line was sketched by hand and its
-elevations come from the Copernicus DEM via the Open-Meteo elevation API. It is for testing only,
-not for navigation.
+`samples/wicklow-white-hill-loop.gpx` is an 18.2 km loop in the Wicklow Mountains with 695 m of
+ascent. It starts near Ballinastoe Woods, climbs to White Hill (629 m) on the Wicklow Way, then
+loops south towards Lough Dan and back. It was planned in [gpx.studio](https://gpx.studio), which snaps to
+mapped paths and adds elevation from a terrain model. It is a planned route, not a recording, so it
+has no timestamps. It is for testing only, not for navigation.
+
+The backend tests use a separate hand-sketched Carrauntoohil route in `backend/src/test/resources`.
 
 ## Known limitations (planned for later iterations)
 
 - Forecast temperature and wind are for the forecast model's terrain height, not the walker's. On
   the summit of Carrauntoohil (1039 m) the model terrain is around 700 m, so the summit is
-  forecast too warm and too calm. The timeline shows the model height next to the real one.
+  forecast too warm and too calm. The error can also go the other way: on the Wicklow sample the
+  model ground is about 100 m too high at the start and about 90 m too low further round the
+  loop. The timeline shows the model height next to the real one.
   Altitude adjustment (lapse rate, wind with height) and wind chill come next.
 - No elevation lookup for GPX files without elevation (Copernicus GLO-30 DEM planned).
 - No walking-after-sunset rule yet.

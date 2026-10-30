@@ -31,9 +31,9 @@ export default function App() {
   }
 
   async function loadSample() {
-    const res = await fetch('/carrauntoohil-devils-ladder.gpx')
+    const res = await fetch('/wicklow-white-hill-loop.gpx')
     const blob = await res.blob()
-    setFile(new File([blob], 'carrauntoohil-devils-ladder.gpx', { type: 'application/gpx+xml' }))
+    setFile(new File([blob], 'wicklow-white-hill-loop.gpx', { type: 'application/gpx+xml' }))
   }
 
   return (
